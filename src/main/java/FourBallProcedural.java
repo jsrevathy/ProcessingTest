@@ -1,16 +1,15 @@
 import processing.core.PApplet;
 
-public class TryProcessing extends PApplet {
+public class FourBallProcedural extends PApplet {
 
-    public static final int WIDTH = 320;
-    public static final int height = 240;
-    public static final int HEIGHT = height;
-    public static final int DIAMETER = 30;
-    public static final int SCREEN_WIDTH = 1000;
-    public static final int SCREEN_HEIGHT = 1000;
-    int x1=0,x2=0,x3=0,x4=0;
 
-    public static void main(String[] args) { PApplet.main("TryProcessing", args); } // java calls it
+    public static void main(String[] args) { PApplet.main("FourBallProcedural", args); } // java calls it
+
+    public static final int DIAMETER = 10;
+    public static final int SCREEN_WIDTH = 640;
+    public static final int SCREEN_HEIGHT = 320;
+    int x1 = 0, x2 = 0, x3 = 0, x4 = 0;
+
 
     @Override
     public void settings() {
@@ -34,27 +33,27 @@ public class TryProcessing extends PApplet {
 
     private void drawCircleOne() {
 
-        ellipse(x1, SCREEN_HEIGHT/6, DIAMETER,DIAMETER);
+        ellipse(x1, SCREEN_HEIGHT / 5, DIAMETER, DIAMETER);
 
         x1++;
     }
 
     private void drawCircleTwo() {
 
-        ellipse(x2, (SCREEN_HEIGHT*2)/6, DIAMETER,DIAMETER);
-        x2 +=2;
+        ellipse(x2, (SCREEN_HEIGHT * 2) / 5, DIAMETER, DIAMETER);
+        x2 += 2;
     }
 
     private void drawCircleThree() {
 
-        ellipse(x3, (SCREEN_HEIGHT*3)/6, DIAMETER,DIAMETER);
-        x3 +=3;
+        ellipse(x3, (SCREEN_HEIGHT * 3) / 5, DIAMETER, DIAMETER);
+        x3 += 3;
     }
 
     private void drawCircleFour() {
 
-        ellipse(x4, (SCREEN_HEIGHT*4)/6, DIAMETER,DIAMETER);
-        x4 +=4;
+        ellipse(x4, (SCREEN_HEIGHT * 4) / 5, DIAMETER, DIAMETER);
+        x4 += 4;
     }
 
     private void paintWhite() {
