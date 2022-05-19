@@ -6,9 +6,7 @@ public class FourBallOOPS extends DrawCircle {
     public static void main(String[] args) { PApplet.main("FourBallOOPS", args);
         DrawCircle obj = new DrawCircle();
         obj.draw();
-
     }
-
 }
 
 class DrawCircle extends PApplet{

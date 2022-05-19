@@ -42,8 +42,8 @@ public class FourBallProcedural extends PApplet {
 
         ellipse(x2, (SCREEN_HEIGHT * 2) / 5, DIAMETER, DIAMETER);
         x2 += 2;
-    }
 
+    }
     private void drawCircleThree() {
 
         ellipse(x3, (SCREEN_HEIGHT * 3) / 5, DIAMETER, DIAMETER);
